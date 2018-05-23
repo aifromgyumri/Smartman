@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Smartman.Models
 {
-    public class User
+    public class UserModel
     {
         public int Id { get; set; }
 
@@ -16,9 +16,6 @@ namespace Smartman.Models
         public int Username { get; set; }
 
         public int Rating { get; set; }
-        
-
-
 
     }
 }
