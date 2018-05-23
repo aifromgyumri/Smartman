@@ -13,7 +13,11 @@ namespace Smartman.Models
 
         public string Surname { get; set; }
 
-        public int MyProperty { get; set; }
+        public int Username { get; set; }
+
+        public int Rating { get; set; }
+        
+
 
 
     }
