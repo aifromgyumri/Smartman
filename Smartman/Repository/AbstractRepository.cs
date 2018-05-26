@@ -49,6 +49,15 @@ namespace Smartman.Repository
             }
         }
 
+         protected bool IsEntityTracking<U>(U entity) where U : class
+        {
+            var state = _dbContext.Entry(entity).State;
+            if (state != EntityState.Detached)
+            {
+                return true;
+            }
+            return false;
+        }
         public void DetachAll()
         {
             var trackedEntities = _dbContext.ChangeTracker.Entries().ToArray();

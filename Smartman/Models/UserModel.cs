@@ -7,7 +7,7 @@ namespace Smartman.Models
 {
     public class UserModel
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         public string Name { get; set; }
 
@@ -24,6 +24,8 @@ namespace Smartman.Models
         public string Email { get; set; }
 
         public string Phone { get; set; }
+
+        public string Role { get; internal set; }
 
     }
 }

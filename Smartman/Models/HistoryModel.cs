@@ -7,6 +7,7 @@ namespace Smartman.Models
 {
     public class HistoryModel
     {
+        public long Id { get; set; }
         public UserModel User { get; set; }
 
         public QuestionModel Question { get; set; }
